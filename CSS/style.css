@@ -1,0 +1,301 @@
+body{
+    font-size:15px;
+    font-family:monospace;
+    color:black;
+    background: radial-gradient(circle, lightsteelblue,rgb(128, 0, 128, 0.583));
+}
+
+header{
+	background:linear-gradient(to bottom, rgb(143, 143, 246),rgb(128, 0, 128, 0.367)); 	
+	color:#fff; 			
+	text-align:left;
+	padding:5px;
+    width: 100%;
+}
+
+.header1{
+	display:flex;			                /*tipo de apresentação das divs na tela*/
+	justify-content:center;
+	align-items:center;
+    font-size:50px;
+    font-family:verdana;
+    color:black;
+    font-weight: bold;
+}
+
+.header1 img{
+	max-width:70%;
+	margin-left:-180px;
+	border-radius:70%;
+    display:flex;	
+}
+.texto{
+    font-size: 18px;
+    font-family: verdana;
+    text-align: justify;
+    padding: 10px;
+    text-indent: 42px;
+}
+button{
+	background: linear-gradient(to bottom, rgb(128, 0, 128, 0.367), lightcoral);
+	padding:10px 20px;
+	border: none; /*solid, dashed, dotted, ridge, inset, outset*/
+	border-radius: 10px;
+	cursor: pointer; /*pointer=seta / move = elemento pode ser movido / text : indica que pode selecionar o texto*/
+	transition: background 0.2s; /*faz a transição do linear gradiente do mouse hover ficar 'suave' com apenas 2 seg*/
+    width: 150%;
+    font-size: 25px;
+    font-family: courier new;
+    font-weight: bold;
+}
+button:hover{
+	background: linear-gradient(to top, purple, pink); /*para a transição do mouse hover ficar leve para o usuário, use um gradiente nas direções opostas*/
+}
+
+
+.menu{
+background:linear-gradient (to bottom, rgb(128, 0, 128, 0.472), lightcoral );	/* cinza claro*/
+color:black;
+margin:0%;
+padding: 10px;
+display:flex;
+font-size: 33px;
+font-family: courier new;
+font-weight: bold;
+justify-content: space-evenly   ;
+border: 0;
+width: 100%;
+display: flex;
+
+}
+.menu a:hover{
+    color: aliceblue;
+}
+
+.marquee-texto{
+    margin-top: 3px;
+    background-color: rgba(128, 0, 128, 0.28);
+    height: 28px; 
+    border-style: solid;
+    border-width: 1px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: times new roman;
+}
+
+.menu ul{
+	list-style:none;
+	padding:1px;
+	margin:0;
+	display:flex;
+    color: black;
+}
+
+.menu li{
+	margin-right:220px;
+    list-style:none;
+    color: black;
+}
+
+.menu li:visited{
+    color:black;
+}
+.main{
+    margin-left:0 auto;
+	color: black;
+	padding:20px;
+	flex: 1;
+    font-size:18px;
+}
+
+.container{
+    display: flex;
+}
+
+h1{
+    Font-size:70px;
+    font-family:Trebuchet MS;
+}
+.main h1{
+    font-family:sans-serif;
+    color: purple;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color:rgb(0, 0, 0);
+    font-size: 90px;
+}
+
+.main li{
+    list-style:none;
+    padding:1px;
+	margin:0;
+	display:flex;
+    font-size: 38px;
+    font-family: verdana;
+    font-weight: bold;
+    color: black;
+}
+
+.subtopico{
+    display:flex;
+    font-size: 15px;
+    font-family: verdana;
+    font-weight: bold;
+    color: lightskyblue;
+}
+
+.container b{
+    color: blue;
+    text-decoration: none;
+}
+
+.hr{
+    color: blue;
+
+}
+
+.imagens2{
+    margin: auto;
+}
+
+.imagens{
+    text-align: center;
+}
+
+.l_p_g{
+    font-weight: bold;
+    font-family: times new roman;
+    font-size: 28px;
+
+}
+.l_p_g a{
+    text-decoration: none;
+    color: black;
+}
+.l_p_g a:hover{
+    color:aliceblue ;
+}
+
+ 
+
+#mapa{
+	width:30%;
+	color:white;
+	float:right;
+	padding: 1px;
+    overflow: hidden;
+    background:radial-gradient(circle, rgba(128, 0, 128, 0.658), lightpink);
+    border-radius: 25%;
+}
+
+.marquee-mapa{
+    font-family:verdana;
+    font-size:20px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    height: 27px;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color:rgb(0, 0, 0);
+}
+.marquee-container{
+	width:100%;
+	overflow: hidden;  /* visible, hidden, scroll, auto*/
+}
+
+#mapa h2{
+    font-size: 50px;
+    font-family:times new roman;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+#mapa img{
+	width:100%;
+	height:auto;
+	animation: zoomImagem 3s ease-in-out infinite alternate;
+}
+@keyframes zoomImagem{
+	0% {
+		transform:scale(1);
+	}
+	100%{
+		transform:scale(1.2);
+	}
+}
+
+image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    background-size: cover;
+    animation: fade 15s infinite;
+}
+
+#produtos h1{
+    font-family:sans-serif;
+    color: purple;
+    margin: auto;
+    width: 38%;
+    font-size: 80px;
+}
+
+#img1{
+    width:25%;
+    margin-right: 200px;
+    align-items: left;
+
+}
+#img2{
+    width:25%;
+}
+
+#img3{
+    width:25%;
+
+}
+
+#img4{
+    width:25%;
+
+}
+
+.p_produto{
+    font-size: 22px;
+    font-family: Times New Roman;
+}
+.p_produto a{
+    text-decoration: none;
+    color: purple;
+}
+.p_produto a:hover{
+    color: lightpink;
+}
+.foto{
+    border-radius: 30%;
+    width: 25%;
+}
+.footer{
+    width: 100%;
+    margin:center;
+    background: rgb(143, 143, 246);
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(143, 143, 246), rgb(128, 0, 128, 0.75));
+}
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+.menu a{
+    text-decoration: none;
+}
+p a{
+    text-decoration: none;
+    color: black;
+    font-family: times new roman;
+    font-size: 25px;
+}
+p a:hover{
+    color: aliceblue;
+}
